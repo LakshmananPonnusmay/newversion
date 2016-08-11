@@ -121,9 +121,9 @@ include('agent_header.php'); ?>
 					'type' : 'POST',
 					'url': url,
 					'data': {'fname':card_fname,'lname':card_lname,'account_number':account_number,'routing_number':routing_number,'email':email,'agent_id':agent_id,'tax_id':tax_id},
-					'dataType': 'json',
+					'dataType': 'jsonp',
 					success: function(data) {
-						
+						alert(data);
 						if(data == 1) {			
 							$("#alertmsgs").text("Successfully Updated");
 							window.location.reload();									
