@@ -1,4 +1,5 @@
 <?php 
+ header("Access-Control-Allow-Origin: *");
 error_reporting(0);
 include('agent_header.php'); ?>
 <?php $agentid = $this->uri->segment(2);  ?>
