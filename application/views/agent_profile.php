@@ -124,14 +124,7 @@ include('agent_header.php'); ?>
 					'dataType': 'jsonp',
 					success: function(data) {
 						alert(data);
-						if(data == 1) {			
-							$("#alertmsgs").text("Successfully Updated");
-							window.location.reload();									
-						}
 						
-						if(data == 0) {								
-							$("#alertmsg").text("Enter valid details");
-						}
 						
 					}
 				
