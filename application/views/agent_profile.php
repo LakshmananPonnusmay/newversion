@@ -1,5 +1,4 @@
 <?php 
- header("Access-Control-Allow-Origin: *"); 
 error_reporting(0);
 include('agent_header.php'); ?>
 <?php $agentid = $this->uri->segment(2);  ?>
@@ -114,17 +113,23 @@ include('agent_header.php'); ?>
 			
 			var agent_id = <?php echo $agent_details[0]['agent_id']; ?>;
 			
-			//var url = '<?php echo $stripeurl; ?>create_bank_recipient_agent.php';  
-			var url = 'https://vc.bairo.co/stripe/create_bank_recipient_agent.php'; 
+			var url = '<?php echo $stripeurl; ?>create_bank_recipient_agent.php';
 				
 				$.ajax({
 					'type' : 'POST',
 					'url': url,
 					'data': {'fname':card_fname,'lname':card_lname,'account_number':account_number,'routing_number':routing_number,'email':email,'agent_id':agent_id,'tax_id':tax_id},
-					'dataType': 'jsonp',
+					//'dataType': 'json',
 					success: function(data) {
-						alert(data);
 						
+						if(data == 1) {			
+							$("#alertmsgs").text("Successfully Updated");
+							window.location.reload();									
+						}
+						
+						if(data == 0) {								
+							$("#alertmsg").text("Enter valid details");
+						}
 						
 					}
 				
