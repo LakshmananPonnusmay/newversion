@@ -21,12 +21,14 @@ class talent_registration_model extends CI_Model {
 			$profile_url = $_POST['profile_url']; 
 		}
 		
+		$user_name = $_POST['first_name'].' '.$_POST['last_name'];
 		
 		$data = array(
 			'email' 	   		=> $_POST['email'],
 			'password' 			=> $_POST['password'],
 			'first_name' 		=> $_POST['first_name'],
 			'last_name' 		=> $_POST['last_name'],
+			'user_name' 		=> $user_name,
 			'phone_number' 		=> $_POST['phone_number'],
 			'profile_url' 		=> $profile_url,
 			'w9_form' 			=> $_POST['w9_form'],

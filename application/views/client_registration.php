@@ -369,6 +369,7 @@ include('reg_header.php'); ?>
 						}
 						else {
 							var alertmessage = JSON.stringify(data['message']);
+							var alertmessage = alertmessage.replace(/\"/g, "");
 							$("#alertmsg").text(alertmessage);
 							$("html, body").animate({ scrollTop: 0 }, "slow");
 						}
