@@ -46,5 +46,5 @@ require(dirname(__FILE__) . '/Stripe/Event.php');
 require(dirname(__FILE__) . '/Stripe/Transfer.php');
 require(dirname(__FILE__) . '/Stripe/Recipient.php');
 require(dirname(__FILE__) . '/Stripe/ApplicationFee.php');
-echo "gbhggh";
+echo gbhggh"
 ?>
