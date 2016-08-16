@@ -20,8 +20,7 @@ error_reporting(E_ALL);
 		
 		}
 		catch (Exception $e) {
-		$error = "false,".$e->getMessage();
-		echo $e->getMessage();
+		
 		echo '0';
 		}
 
