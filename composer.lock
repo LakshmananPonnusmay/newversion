@@ -1,19 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @kumar31
- Watch 1
-  Star 8
- Fork 1 cviebrock/gifdown.io
- Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathgifdown.io/composer.lock
-a5604df  on Feb 6
- Colin Viebrock xdebug
-0 contributors
-RawBlameHistory     298 lines (297 sloc)  9.84 KB
+
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
@@ -311,5 +296,4 @@ RawBlameHistory     298 lines (297 sloc)  9.84 KB
     "platform": [],
     "platform-dev": []
 }
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+
